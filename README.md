@@ -33,8 +33,6 @@ A comprehensive Model Context Protocol (MCP) server for interacting with the Tik
 
 ### Installation
 
-### Installation
-
 To get the latest version with recent improvements (async support, retries), install directly from GitHub:
 
 ```bash
@@ -42,11 +40,6 @@ To get the latest version with recent improvements (async support, retries), ins
 pip install git+https://github.com/ysntony/tiktok-ads-mcp.git
 ```
 
-Or install the stable version from PyPI:
-
-```bash
-pip install tiktok-ads-mcp
-```
 
 ### Configuration
 
