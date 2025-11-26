@@ -33,12 +33,23 @@ A comprehensive Model Context Protocol (MCP) server for interacting with the Tik
 
 ### Installation
 
-To get the latest version with recent improvements (async support, retries), install directly from GitHub:
+### Installation
 
-```bash
-# Install directly from GitHub
-pip install git+https://github.com/ysntony/tiktok-ads-mcp.git
-```
+1. **Download the TikTok Ads MCP**
+   - Click the green "Code" button at the top of the GitHub page
+   - Select "Download ZIP"
+   - Unzip the downloaded file to a location you can easily find (like your Documents folder)
+
+2. **Alternatively, if you're familiar with Git:**
+   ```bash
+   git clone https://github.com/ysntony/tiktok-ads-mcp.git
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   cd tiktok-ads-mcp
+   pip install -e .
+   ```
 
 
 ### Configuration
@@ -65,6 +76,14 @@ pip install git+https://github.com/ysntony/tiktok-ads-mcp.git
    - `TIKTOK_APP_ID`: Your TikTok app ID
    - `TIKTOK_SECRET`: Your TikTok app secret
    - `TIKTOK_ACCESS_TOKEN`: Your access token
+
+   **How to get these credentials:**
+   1. Go to the [TikTok for Business Developers](https://ads.tiktok.com/marketing_api/) portal and log in.
+   2. Click "My Apps" and create a new app.
+   3. Select "Marketing API" as the service type.
+   4. In the app settings, enable permissions related to **Reading** and **Reporting** (e.g., `Ads Management`, `Reporting`).
+   5. Once approved, you will find your `App ID` and `Secret` in the app details.
+   6. Generate an `Access Token` using the "TikTok Marketing API Inspector" or via the OAuth flow documented in the portal.
 
 ### Usage
 
