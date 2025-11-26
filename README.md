@@ -25,13 +25,11 @@ A comprehensive Model Context Protocol (MCP) server for interacting with the Tik
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 - TikTok Business API access
 - Valid API credentials (app ID, secret, access token)
 
 ## Quick Start
-
-### Installation
 
 ### Installation
 
