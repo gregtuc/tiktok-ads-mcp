@@ -34,6 +34,9 @@ cd tiktok-ads-mcp
 pip install -e .
 ```
 
+> [!NOTE]
+> This project requires **Python 3.14.0** or higher. Please ensure your environment is set up correctly.
+
 ### 2. Configure Cursor MCP
 
 Add the following configuration to your `~/.cursor/mcp.json`:
@@ -155,18 +158,13 @@ Retrieves campaigns for a specific advertiser with optional filtering.
 - `advertiser_id` (required): TikTok advertiser ID
 - `filters` (optional): Filtering options
   - `campaign_ids`: List of campaign IDs to filter by
-- `page` (optional): Page number (default: 1)
-- `page_size` (optional): Page size 1-1000 (default: 10)
 
 **Example:**
 ```json
-{
   "advertiser_id": "7441431575776520000",
   "filters": {
     "campaign_ids": ["123456789", "987654321"]
-  },
-  "page": 1,
-  "page_size": 10
+  }
 }
 ```
 
@@ -602,4 +600,4 @@ For issues and questions:
 
 ---
 
-*Last updated: July, 27 2025*
+*Last updated: November 26, 2025*
