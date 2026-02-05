@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  tiktok-ads-mcp:
+    build: .
+    container_name: tiktok-ads-mcp
+    environment:
+      - TIKTOK_APP_ID=${TIKTOK_APP_ID}
+      - TIKTOK_SECRET=${TIKTOK_SECRET}
+      - TIKTOK_ACCESS_TOKEN=${TIKTOK_ACCESS_TOKEN}
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
